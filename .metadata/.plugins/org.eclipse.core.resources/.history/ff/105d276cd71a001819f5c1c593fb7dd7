@@ -27,6 +27,6 @@ public abstract class User {
 	
 	
 	public void addCreditCard(Cards newCard) {
-		creditCards.add(newCard);
+		Cards.add(newCard);
 	}
 }

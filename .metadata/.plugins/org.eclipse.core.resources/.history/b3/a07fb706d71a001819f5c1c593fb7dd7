@@ -1,0 +1,9 @@
+package securde.users;
+
+public class ProductManager extends User {
+	
+	public ProductManager(String userName, String password) {
+		super(userName, password);
+	}
+
+}

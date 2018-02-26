@@ -1,7 +1,7 @@
 package securde.users;
 
 import java.util.ArrayList;
-import securde.resources.Cards;
+
 public abstract class User {
 
 	private final int userId;
@@ -10,9 +10,8 @@ public abstract class User {
 	private ArrayList<Cards> creditCards = new ArrayList<Cards>();
 	private boolean isPremium;
 	
-	public User(int id, String userName, String password)
+	public User(String userName, String password)
 	{
-		this.userId = id;
 		this.userName = userName;
 		this.password = password;
 		this.isPremium = false;
@@ -26,7 +25,7 @@ public abstract class User {
 	}
 	
 	
-	public void addCreditCard(Cards newCard) {
-		creditCards.add(newCard);
+	public void addCreditCard(Card newCard) {
+		Cards.add(newCard);
 	}
 }
