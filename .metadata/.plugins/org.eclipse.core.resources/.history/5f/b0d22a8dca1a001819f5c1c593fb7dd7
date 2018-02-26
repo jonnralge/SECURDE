@@ -1,0 +1,23 @@
+package securde.users;
+
+import java.util.ArrayList;
+
+public abstract class UserInterface {
+
+	private final String userName;
+	private String password;
+	private Cart currentCart;
+	private ArrayList<Cards> creditCards = new ArrayList<Cards>();
+	
+	public void changePassword(String newPassword) {
+		
+	}
+	
+	public boolean checkoutCart() {
+		
+	}
+	
+	public void addCreditCard(Card newCard) {
+		Cards.add(newCard);
+	}
+}

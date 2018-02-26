@@ -1,0 +1,8 @@
+package securde.users;
+
+public interface User {
+
+	public void changePassword(String newPassword);
+	
+	public boolean checkoutCard(Cart cart);
+}
